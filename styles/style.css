@@ -44,8 +44,7 @@
 .heder_logo_image {
   width: 148px;
   height: 105px;
-  align-items: center;
-  margin-left: 43px;
+  margin-left: 45px;
 }
 
 .header_adress {
@@ -82,7 +81,6 @@
   text-transform: uppercase;
   padding: 165px 50px 127px 50px;
   font-size: 100px;
-  width: 100%;
   letter-spacing: 0.3em;
   z-index: 2;
 }
@@ -168,63 +166,70 @@
 
 /*Заголовок карточек */
 .lots {
+  display: flex;
+  row-gap: 12px;
   margin: 191px 24px 145px 24px;
-  height: 100%;
-  width: 1052px;
+  min-width: 1052px;
   position: relative;
+  flex-direction: column;
 }
 
 .lots__heading {
-  min-height: 60px;
+  display: flex;
   padding: 0px 891px 27px 40px;
   text-transform: uppercase;
   font-size: 40px;
   line-height: 21px;
   position: relative;
+  flex-direction: row;
 }
 
 /* Сисок карточек*/
 .lots__card-list {
-  display: grid;
-  min-height: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   color: white;
   gap: 25px;
 }
 
+
 .lots__card-list-item {
-  display: block;
   position: relative;
+  min-height: 563px;
+  width: 334px;
+  flex-grow: 1;
+}
+
+.card {
   height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-link {
+  height: 100%;
   display: block;
   text-decoration: none;
-  height: 100%;
 }
 
 /*Изображения*/
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  min-height: 563px;
-  background-size: cover;
-  background-position: center;
+  
+  
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  min-height: 563px;
-  background-size: cover;
-  background-position: center;
+  
+  
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  min-height: 563px;
-  background-size: cover;
-  background-position: center;
+  
+  
 }
 
 /* ссылка*/
@@ -232,10 +237,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30px 810px 2px 40px;
+  padding: 21px 810px 2px 40px;
   font-size: 20px;
   text-decoration: underline;
-  line-height: 23.48px;
+  line-height: 18.48px;
   text-underline-position: under;
 }
 /*Секция Об аукционе*/
@@ -243,7 +248,7 @@
   display: grid;
   grid-template-columns: 359px 1fr;
   width: 1052px;
-  margin: 146px 24px 180px 24px;
+  margin: 145px 24px 180px 24px;
   align-content: center;
 }
 
@@ -251,7 +256,7 @@
   display: flex;
   width: 240px;
   height: 240px;
-  margin: 34px 72px 320px 47px;
+  margin: 37px 72px 0px 47px;
   border-radius: 100%;
   flex-direction: column;
   justify-content: center;
@@ -265,7 +270,7 @@
 
 .about__column {
   display: block;
-  margin-top: 130px;
+  margin-top: 132px;
 }
 
 .about__title {
